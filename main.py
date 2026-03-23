@@ -21,3 +21,8 @@ def get_item(item_id: int):
 @app.get("/ping")
 def ping():
     return {"pong": True}
+
+
+@app.get("/version")
+def version():
+    return {"version": "1.0.0"}
